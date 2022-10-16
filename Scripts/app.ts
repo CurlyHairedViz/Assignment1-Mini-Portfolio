@@ -3,23 +3,6 @@
 (function()
 {
 
-    // function LoadData(method: string, url: string, callback: Function): void
-    // {
-    //     let XHR = new XMLHttpRequest();
-
-    //     XHR.open(method, url);
-
-    //     XHR.send();
-
-    //     XHR.addEventListener("readystatechange", function(){
-    //         if ((XHR.status == 200) && (XHR.readyState == 4))
-    //         {
-
-    //             callback(XHR.responseText);
-    //         }
-    //     })
-    // }
-
     function LoadHeader(): void 
     {
         $.get("./Views/components/header.html", function(html_data){
@@ -27,17 +10,16 @@
             $("header").html(html_data);
         });
 
-        $(window).on("resize", function(){
+        // $(window).on("resize", function(){
             
-            if ($(window).width() <= 992)
-            {
-                console.log($(window).width());
-                $("#mainNav").removeClass("fixed-bottom").addClass("fixed-top");
-            }
-            else{
-                $("#mainNav").removeClass("fixed-top").addClass("fixed-bottom");
-            }
-        });
+        //     if ($(window).width() <= 992)
+        //     {
+        //         $("#mainNav").removeClass("fixed-bottom").addClass("fixed-top");
+        //     }
+        //     else{
+        //         $("#mainNav").removeClass("fixed-top").addClass("fixed-bottom");
+        //     }
+        // });
         
     }
 
@@ -51,14 +33,47 @@
         });
     }
 
-    // function LoadContent(): void 
-    // {
-    //     $.get("./Views/content/", function(html_data){
+    function LoadProjects(url: string): void 
+    {
+        let count = 1;
+        $.getJSON(url, function(html_data)
+        {
+            $.each(html_data, function (key, value){
+                
+                for (let data of value) {
+                    
+                    const p = document.createElement("p");
+                    const heading3 = document.createElement("h3");
+                    const projectDiv = document.createElement("div");
+                    
+                    projectDiv.classList.add(`ProjectDetails${count}`);
+                    heading3.classList.add("card-title");
+                    p.classList.add("card-text");
 
-    //         $("main").html(html_data);
+                    $(heading3).html(data.ProjectName);
+                    $(projectDiv).append(heading3);
+                    $(`#Project${count}`).append(projectDiv);
 
-    //     });
-    // }
+                    $(p).html(data.ProjectDescription);
+                    $(projectDiv).append(p);
+                    $(`#Project${count}`).append(projectDiv);
+
+                    count++;
+                }  
+            });
+        });
+
+    }
+
+    function LoadAbout(url: string): void 
+    {
+        $.getJSON(url, function(html_data)
+        {
+            let aboutMe = html_data.Description;
+
+            $("#AboutDesc").html(aboutMe);
+        });
+    }
 
     function Start() {
     
@@ -66,20 +81,11 @@
 
         LoadHeader();
 
-        LoadFooter();
-        // console.log(window.screen.availWidth);
-       
+        // LoadFooter();
+        
+        LoadProjects("./Data/projects.json");
+        LoadAbout("./Data/about.json");
 
-        // let contactList;
-
-        // $.getJSON("./Data/contacts.json", function(DataSource){
-        //     contactList = DataSource.ContactList;
-
-        //     let contact = new Contact();
-        //     // console.log(contact.toString());
-        // })
-
-        //localStorage.setItem("0", "Viraj");
 
     }
 

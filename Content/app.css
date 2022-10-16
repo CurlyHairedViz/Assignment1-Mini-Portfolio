@@ -1,16 +1,83 @@
 main{
-    height: 100vh;
+    padding-top: 3%;
     background-color: #171717;
 }
 
-main{
+#mainContent{
     padding-top: 10%;  
-}
+    height: 100vh;
 
-.container-fluid div{
-    padding-top: 3%;
 }
 
 .bg-black{
     background-color: #171717 !important;
 }
+
+#AboutMe {
+    padding-top: 15%;
+    font-size: 20px;
+}
+
+#PortfolioImg{
+    width: 50%;
+}
+
+.card-text{
+    padding-top: 4%;
+}
+
+#AboutImg{
+    column-width: 20%;
+}
+
+#AboutSection{
+    width: 100%;
+    height: auto;
+}
+
+.services>.card{
+    border: 0;
+    margin-left: 5%;
+    margin-top: 1%;
+    padding: 0;
+}
+
+.services>.card>.card-body{
+    border: 1px solid #dadada;
+}
+
+
+.services>.card>.card-title{
+    margin: 0;
+    padding-top: 2%;
+}
+
+/* .services{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:
+        minmax(100px, auto) 
+        minmax(100px, auto);
+    grid-template-areas:
+        "WebDesign WebDevelopment SoftwareDevelopment" 
+        "AppDevelopment AppDevelopment AppDevelopment";
+    column-gap: 1%;
+    row-gap: 1rem;
+    text-align: center;
+}
+
+.services>div:nth-child(1){
+    grid-area: WebDesign;
+}
+
+.services>div:nth-child(2){
+    grid-area: WebDevelopment;
+}
+
+.services>div:nth-child(3){
+    grid-area: SoftwareDevelopment;
+}
+
+.services>div:nth-child(4){
+    grid-area: AppDevelopment;
+} */
