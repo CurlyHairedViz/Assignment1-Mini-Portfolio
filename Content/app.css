@@ -1,0 +1,16 @@
+main{
+    height: 100vh;
+    background-color: #171717;
+}
+
+main{
+    padding-top: 10%;  
+}
+
+.container-fluid div{
+    padding-top: 3%;
+}
+
+.bg-black{
+    background-color: #171717 !important;
+}
