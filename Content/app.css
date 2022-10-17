@@ -37,6 +37,16 @@ main{
     font-size: 20px;
 }
 
+#BrandLogo{
+    filter: invert(1);
+    padding-top: 2%;
+}
+
+#BrandLogo:hover {
+    padding-top: 3%;
+    transition: all .5s;
+}
+
 #PortfolioImg{
     width: 45%;
 }

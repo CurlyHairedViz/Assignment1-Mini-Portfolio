@@ -72,6 +72,11 @@
         });
     }
 
+    function formSubmit():void
+    {
+        window.alert("Thank You! We will contact you shortly.");
+    }
+
     // Main function to call all other methods
     function Start() {
     
@@ -82,6 +87,10 @@
         LoadProjects("./Data/projects.json");
         LoadAbout("./Data/about.json");
 
+        let form = document.getElementById("formSubmit");
+
+        form.addEventListener("submit", formSubmit);
+        
     }
 
     window.addEventListener("load", Start);
