@@ -1,8 +1,8 @@
 {
     "ProjectList": [        
-        {"ProjectName": "Content Management System", "ProjectDescription": "A content management system which allows users to maintain an acconut and add data into database which creates webpages on public website <br> Scope: Worldwide <br> Coding Languages: Php, JavaScript, CSS, SQL"},
-        {"ProjectName": "Mentoring System", "ProjectDescription": "A mentoring system to student to manage their academics. <br> Scope: Personal. Owned by an organization. <br> Coding Languages: Html, Css, Php, JavaScript"},
-        {"ProjectName": "Biobook", "ProjectDescription": "A social media website for students to help them connect with other like-minded people. <br>Scope : A Private webpage used at an organization <br> Coding Languages: HTML, CSS, JavaScript"},
-        {"ProjectName": "BlogSpot", "ProjectDescription": "A Website which lets users creates blogs and share them out into the world. <br> Scope: Worldwide <br>Coding Languages: Html, Css"}
+        {"ProjectName": "Content Management System", "ProjectDescription": "A content management system which allows users to maintain an acconut and add data into database which creates webpages on public website. <br><br> Scope: Worldwide <br> Coding Languages: Php, JavaScript, CSS, SQL"},
+        {"ProjectName": "Mentoring System", "ProjectDescription": "A mentoring system to student to manage their academics. <br><br> Scope: Personal and owned by an organization. <br> Coding Languages: Html, Css, Php, JavaScript"},
+        {"ProjectName": "Biobook", "ProjectDescription": "A social media website for students to help them connect with other like-minded people. <br><br>Scope : A Private webpage used at an organization <br> Coding Languages: HTML, CSS, JavaScript"},
+        {"ProjectName": "BlogSpot", "ProjectDescription": "A Website which lets users creates blogs and share them out into the world. <br><br> Scope: Worldwide <br>Coding Languages: Html, Css"}
     ]
 }

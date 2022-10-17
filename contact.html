@@ -18,9 +18,29 @@
 
     <!-- Main Content -->
     <main>
-        <div class="container">
-            <h1>Hello World</h1>
+        <div class="container-fluid bg-white p-5 text-center">
+            <h1>Contact Us</h1>
             <hr>
+
+            <form class="contactForm w-50 m-auto">
+                <div class="form-group mt-2">
+                  <label for="exampleFormControlInput1">Full Name</label>
+                  <input type="text" class="form-control mt-2" id="FullName" placeholder="Enter your Full Name" required>
+                </div>
+
+                <div class="form-group mt-2">
+                    <label for="exampleFormControlInput1">Contact Number</label>
+                    <input type="text" class="form-control mt-2" id="exampleFormControlInput1" placeholder="XXX-XXX-XXXX" required>
+                </div>  
+               
+                <div class="form-group mt-2">
+                  <label for="exampleFormControlTextarea1">Message</label>
+                  <textarea class="form-control mt-2" id="UserMessage" rows="3" placeholder="Type your message" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary mt-3">Submit</button>
+            </form>
+
         </div>
     </main>
 

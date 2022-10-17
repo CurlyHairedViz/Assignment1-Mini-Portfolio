@@ -1,17 +1,36 @@
 main{
     padding-top: 3%;
-    background-color: #171717;
+    /* background-color: #171717; */
 }
 
 #mainContent{
-    padding-top: 10%;  
-    height: 100vh;
-
+    padding-top: 10%;
 }
 
 .bg-black{
     background-color: #171717 !important;
 }
+
+.navbar-brand{
+    font-size: 25px;    
+}
+
+.mission{
+    font-size: 25px;
+    font-weight: 100;
+    
+}
+
+.mission a{
+    text-decoration: none;
+    color: #171717;
+}
+
+.mission:hover i{
+    padding-left: 1%;
+    transition: all .5s;
+}
+
 
 #AboutMe {
     padding-top: 15%;
@@ -19,20 +38,15 @@ main{
 }
 
 #PortfolioImg{
-    width: 50%;
-}
-
-.card-text{
-    padding-top: 4%;
+    width: 45%;
 }
 
 #AboutImg{
     column-width: 20%;
 }
 
-#AboutSection{
-    width: 100%;
-    height: auto;
+.card-text{
+    padding-top: 4%;
 }
 
 .services>.card{
@@ -52,32 +66,13 @@ main{
     padding-top: 2%;
 }
 
-/* .services{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows:
-        minmax(100px, auto) 
-        minmax(100px, auto);
-    grid-template-areas:
-        "WebDesign WebDevelopment SoftwareDevelopment" 
-        "AppDevelopment AppDevelopment AppDevelopment";
-    column-gap: 1%;
-    row-gap: 1rem;
-    text-align: center;
+.projects{
+    margin: 0;
+    padding: 0;
 }
 
-.services>div:nth-child(1){
-    grid-area: WebDesign;
+.projects>.card{
+    margin-left: 5%;
+    margin-top: 2%;
+    padding: 0;
 }
-
-.services>div:nth-child(2){
-    grid-area: WebDevelopment;
-}
-
-.services>div:nth-child(3){
-    grid-area: SoftwareDevelopment;
-}
-
-.services>div:nth-child(4){
-    grid-area: AppDevelopment;
-} */
