@@ -1,4 +1,4 @@
-/*  File Name - app.css
+/*  File Name - app.ts
     Author - Viraj Shah
     Description - Typescript file for function calls of the webpage
 */
