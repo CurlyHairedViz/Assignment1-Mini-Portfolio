@@ -1,3 +1,9 @@
+/*  File Name - app.css
+    Author - Viraj Shah
+    Description - Typescript file for function calls of the webpage
+*/
+
+
 "use script";
 
 (function()
@@ -77,7 +83,7 @@
         window.alert("Thank You! We will contact you shortly.");
     }
 
-    
+
     // Main function to call all other methods
     function Start() {
     
@@ -90,7 +96,8 @@
 
         let form = document.getElementById("formSubmit");
 
-        form.addEventListener("submit", formSubmit);
+        $(form).on("submit", formSubmit);
+        
         
     }
 

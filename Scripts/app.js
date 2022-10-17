@@ -1,3 +1,7 @@
+/*  File Name - app.css
+    Author - Viraj Shah
+    Description - Typescript file for function calls of the webpage
+*/
 "use script";
 (function () {
     // Function to load Header Navigation onto the webpage
@@ -62,7 +66,7 @@
         LoadProjects("./Data/projects.json");
         LoadAbout("./Data/about.json");
         let form = document.getElementById("formSubmit");
-        form.addEventListener("submit", formSubmit);
+        $(form).on("submit", formSubmit);
     }
     window.addEventListener("load", Start);
 })();
